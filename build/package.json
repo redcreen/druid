@@ -1,0 +1,6 @@
+{
+  "name": "druid-doc-builder"
+, "version": "0.0.1"
+, "description": "build druid docs"
+, "dependencies": { "hogan.js": "1.0.5-dev" }
+}

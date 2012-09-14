@@ -1,0 +1,119 @@
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>{{_i}}Download{{/i}}</h1>
+    <p class="lead">{{_i}}Use the links below to download a distribution of Druid.{{/i}}</p>
+  </div>
+</header>
+<div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span9">
+    <!-- Download
+        ================================================== -->
+        <section id="download-dist">
+          <div class="page-header">
+            <h1>{{_i}}Download Compiled{{/i}}</h1>
+          </div>
+          <p class="lead">{{_i}}You can download from these places.{{/i}}</p>
+              <h3>{{_i}}Download a distribution{{/i}}</h3>
+              <p>{{_i}}Github: <a href="https://github.com/AlibabaTech/druid/downloads">https://github.com/AlibabaTech/druid/downloads</a>{{/i}}</p>
+              <p>{{_i}}Maven central repository: <a href="http://repo1.maven.org/maven2/com/alibaba/druid/">http://repo1.maven.org/maven2/com/alibaba/druid/</a>{{/i}}</p>
+              <p>{{_i}}Alibaba maven repository: <a href="http://code.alibabatech.com/mvn/releases/com/alibaba/druid/">http://code.alibabatech.com/mvn/releases/com/alibaba/druid/</a>{{/i}}</p>
+              <h3>{{_i}}Download use maven{{/i}}</h3>
+              <pre class="prettyprint linenums">
+&lt;dependency&gt;
+     &lt;groupId&gt;com.alibaba&lt;/groupId&gt;
+     &lt;artifactId&gt;druid&lt;/artifactId&gt;
+     &lt;version&gt;0.2.6&lt;/version&gt;
+&lt;/dependency&gt;
+</pre>
+        </section>
+
+        <!-- Download source
+        ================================================== -->
+        <section id="download-source">
+          <div class="page-header">
+            <h1>{{_i}}Download Source{{/i}}</h1>
+          </div>
+          <p class="lead">{{_i}}Druid source code is hosted at <a href="http://github.com/AlibabaTech/druid">GitHub</a>.{{/i}}</p>
+          <p>{{_i}}If you use linux, git clone is the best way.{{/i}}
+<pre class="prettyprint">
+$ git clone git://github.com/AlibabaTech/druid.git
+Initialized empty Git repository in /path/to/druid/.git/
+remote: Counting objects: 100, done.
+remote: Compressing objects: 100% (86/86), done.
+remote: Total 100 (delta 35), reused 0 (delta 0)
+Receiving objects: 100% (100/100), 9.51 KiB, done.
+Resolving deltas: 100% (35/35), done.
+$ cd druid/
+</pre></p>
+            <p>{{_i}}If you use Mac, go to <a href="http://mac.github.com/">Github for Mac</a>. then use it clone.{{/i}}</p>
+            <p>{{_i}}If you use Windows, go to <a href="http://windows.github.com/">Github for Windows</a>, then use it clone.{{/i}}</p>
+            <p>{{_i}}If you use Eclipse, go to <a href="http://eclipse.github.com/">Github for Eclipse</a>, then use it clone.{{/i}}</p>
+            <p>{{_i}}If you use Mobile, go to <a href="http://mobile.github.com/">Github for Mobile Apps</a>, then use it clone.{{/i}}</p>
+        </section>
+
+        <!-- Nightly Snapshots
+        ================================================== -->
+        <section id="nightly-snapshots">
+          <div class="page-header">
+            <h1>{{_i}}Nightly Snapshots{{/i}}</h1>
+          </div>
+          <p class="lead">{{_i}}These distributions are built and deployed nightly, and contain up-to-date fixes and improvements. However, their stability cannot be guaranteed. Use at your own risk.{{/i}}</p>
+          <h3>{{_i}}Snapshot builds for all active releases are published to the Alibaba snapshot repository.{{/i}}</h3>
+          <p>{{_i}}A maven project can access this snapshot repository by adding the following repository in pom.xml:{{/i}}
+<pre class="prettyprint linenums">
+&lt;repository&gt;
+    &lt;id&gt;alibaba-snapshots&lt;/id&gt;
+    &lt;name&gt;alibaba-snapshots&lt;/name&gt;
+    &lt;url&gt;http://code.alibabatech.com/mvn/snapshots/&lt;/url&gt;
+    &lt;layout&gt;default&lt;/layout&gt;
+&lt;/repository>
+</pre>
+</p>
+        </section>
+
+	<!-- Older incubating Releases
+        ================================================== -->
+        <section id="older-releases">
+          <div class="page-header">
+            <h1>{{_i}}Older Releases{{/i}}</h1>
+          </div>
+          <p class="lead">{{_i}}Older releases is not recommended, unless you are certain you want to.{{/i}}</p>
+          <p>{{_i}}Druid older releases are hold at Github: <a href="https://github.com/AlibabaTech/druid/downloads">https://github.com/AlibabaTech/druid/downloads</a>.{{/i}}</p>
+        </section>
+
+        <!-- Dependency
+        ================================================== -->
+        <section id="dependency">
+          <div class="page-header">
+            <h1>{{_i}}Dependency{{/i}}</h1>
+          </div>
+          <p class="lead">{{_i}}Druid have no dependency for other jars.{{/i}}</p>
+          <p>{{_i}}Other help: Druid's command line monitor use Oracle's JDK package.{{/i}}</p>
+        </section>
+
+        <!-- Next
+        ================================================== -->
+        <section id="what-next">
+          <div class="page-header">
+            <h1>{{_i}}What next?{{/i}}</h1>
+          </div>
+          <p class="lead">{{_i}}Head to the docs for information, examples, and code snippets, or take the next leap and use Druid for any upcoming project.{{/i}}</p>
+          <a class="btn btn-large btn-primary" href="../manual">{{_i}}Visit the Druid manual{{/i}}</a>
+        </section>
+      </div>
+    <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#download-dist"><i class="icon-chevron-left"></i> {{_i}}Download Compiled{{/i}}</a></li>
+          <li><a href="#download-source"><i class="icon-chevron-left"></i> {{_i}}Download Source{{/i}}</a></li>
+          <li><a href="#nightly-snapshots"><i class="icon-chevron-left"></i> {{_i}}Nightly Snapshots{{/i}}</a></li>
+          <li><a href="#older-releases"><i class="icon-chevron-left"></i> {{_i}}Older Releases{{/i}}</a></li>
+          <li><a href="#dependency"><i class="icon-chevron-left"></i> {{_i}}Dependency{{/i}}</a></li>
+          <li><a href="#what-next"><i class="icon-chevron-left"></i> {{_i}}What next?{{/i}}</a></li>
+        </ul>
+      </div>
+  </div>
+</div>

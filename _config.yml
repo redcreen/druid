@@ -3,7 +3,7 @@ safe: true
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:year/:month/:day/:title
 
-exclude: ["README.md", "changelog"]
+exclude: ["README.md", "changelog", "build"]
 auto: true
 markdown: rdiscount
 paginate: 7

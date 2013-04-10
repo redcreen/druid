@@ -25,44 +25,39 @@ import javax.sql.DataSource;
 
 public class DataSourceAdapter extends WrapperAdapter implements DataSource {
 
-    private int         loginTimeout = 0;
-    private PrintWriter logWriter    = new PrintWriter(System.out);
+    private DataSource datasource;
 
-    public DataSourceAdapter(){
+    public DataSourceAdapter(DataSource datasource) {
+        this.datasource = datasource;
     }
 
     @Override
     public PrintWriter getLogWriter() throws SQLException {
-        return logWriter;
+        return datasource.getLogWriter();
     }
 
     @Override
     public void setLogWriter(PrintWriter out) throws SQLException {
-        this.logWriter = out;
+        datasource.setLogWriter(out);
     }
 
     @Override
     public void setLoginTimeout(int seconds) throws SQLException {
-        loginTimeout = seconds;
+        datasource.setLoginTimeout(seconds);
     }
 
     @Override
     public int getLoginTimeout() throws SQLException {
-        return loginTimeout;
+        return datasource.getLoginTimeout();
     }
 
     @Override
     public Connection getConnection() throws SQLException {
-        throw new UnsupportedOperationException();
+        return datasource.getConnection();
     }
 
     @Override
     public Connection getConnection(String username, String password) throws SQLException {
-        throw new UnsupportedOperationException();
+        return datasource.getConnection(username, password);
     }
-
-    public Logger getParentLogger() throws SQLFeatureNotSupportedException {
-        throw new SQLFeatureNotSupportedException();
-    }
-
 }
